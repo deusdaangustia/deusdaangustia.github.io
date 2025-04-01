@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anguish - The Shadow</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 0 0 10px #0f0;
+            font-family: 'Nosifer', cursive;
+            text-align: center;
+        }
+        p {
+            font-size: 1.5em;
+            text-shadow: 0 0 5px #0f0;
+            text-align: center;
+        }
+        .typing {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid #0f0;
+            animation: typing 4s steps(40, end) infinite alternate, blink .75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: #0f0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DEUS DA ANGUSTIA</h1>
+        <p class="typing">"As sombras escondem aqueles que conhecem a verdade."</p>
+        <p>"Você sente o frio na espinha? <br>Isso é apenas o começo..."</p>
+    </div>
+</body>
+  </html>
