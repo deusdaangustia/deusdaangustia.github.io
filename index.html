@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anguish - The Shadow</title>
+    <title>Anguish - The Divine Shadow</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
         body {
@@ -16,6 +16,19 @@
             align-items: center;
             height: 100vh;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+            flex-direction: column;
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.ibb.co/0y0CqSvB/Picsart-25-04-01-15-04-57-379.png') no-repeat center center/cover;
+            opacity: 0.3;
+            z-index: -1;
         }
         .container {
             display: flex;
@@ -28,35 +41,72 @@
             font-size: 3em;
             text-shadow: 0 0 10px #0f0;
             font-family: 'Nosifer', cursive;
-            text-align: center;
         }
         p {
             font-size: 1.5em;
             text-shadow: 0 0 5px #0f0;
-            text-align: center;
         }
-        .typing {
-            display: inline-block;
-            overflow: hidden;
+        .escrevendo {
+            border-right: 2px solid green;
             white-space: nowrap;
-            border-right: 2px solid #0f0;
-            animation: typing 4s steps(40, end) infinite alternate, blink .75s step-end infinite;
+            overflow: hidden;
+            width: 0;
+            animation: typing 3s steps(11) forwards, blink 0.5s step-end infinite alternate;
         }
         @keyframes typing {
             from { width: 0; }
-            to { width: 100%; }
+            to { width: 13ch; }
         }
         @keyframes blink {
-            from, to { border-color: transparent; }
-            50% { border-color: #0f0; }
+            50% { border-color: transparent; }
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+        .button {
+            background: black;
+            color: #0f0;
+            border: 1px solid #0f0;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            font-family: 'Courier New', monospace;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .button:hover {
+            box-shadow: 0 0 8px #0f0;
+        }
+        .barra {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            text-align: center;
+            font-size: 1.2em;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            text-shadow: 0 0 10px #0f0;
+            border-top: 2px solid #0f0;
         }
     </style>
 </head>
 <body>
+    <div class="background"></div>
     <div class="container">
         <h1>DEUS DA ANGUSTIA</h1>
-        <p class="typing">"As sombras escondem aqueles que conhecem a verdade."</p>
+        <div class="escrevendo">Hello, World.</div>
         <p>"Você sente o frio na espinha? <br>Isso é apenas o começo..."</p>
+        <div class="buttons">
+            <button class="button" onclick="window.location.href='https://instagram.com/anguishdvn'">my Instagram</button>
+            <button class="button" onclick="window.location.href='https://wa.me/5511961646340'">my WhatsApp</button>
+            <button class="button" onclick="window.location.href='https://t.me/anguishagain'">my Telegram</button>
+        </div>
+    </div>
+    <div class="barra">
+        <span>®DIVINE SUPREMACY<br> Ty: ARABE7 - C4 - ECSTASY</span>
     </div>
 </body>
-  </html>
+</html>
